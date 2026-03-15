@@ -14,9 +14,6 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    EditText so1, so2;
-    TextView kq;
-    Button tinh;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,26 +25,104 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
-        so1 = findViewById(R.id.editTextNumberDecimal1);
-        so2 = findViewById(R.id.editTextNumberDecimal2);
-        tinh = findViewById(R.id.button);
-        kq = findViewById(R.id.textView4);
-        tinh.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String s1 = so1.getText().toString();
-                String s2 = so2.getText().toString();
-                if(!s1.isEmpty() && !s2.isEmpty()){
-                    double a = Double.parseDouble(s1);
-                    double b = Double.parseDouble(s2);
-                     double tong = a + b;
-
-                     kq.setText("" + tong);
-                } else{
-                    kq.setText("Nhap lai");
-                }
-            }
-        });
     }
+    // Hàm xử lí cộng
+    public void xuLiCong(View v){
+        // Lấy dữ liệu số
+        // Tìm edit text số 1 và edit text só 2
+        EditText ed1 = findViewById(R.id.edtSo1);
+        EditText ed2 = findViewById(R.id.edtSo2);
+
+        // Lấy dữ liệu từ 2  điều khiển đó
+        String so1 = ed1.getText().toString();
+        String so2 = ed2.getText().toString();
+
+        // Chuyển dữ liệu từ chuỗi sang số
+        double soA = Double.parseDouble(so1);
+        double soB = Double.parseDouble(so2);
+
+        // Tính toán
+        double tong = soA + soB;
+
+        // Hiện kết quả
+        EditText kq = findViewById(R.id.edtSo3);
+
+        // Chuyển kết quả tính được thành chuỗi
+        String ketQua = String.valueOf(tong);
+
+        // Gắn kết quả lên điều khiển
+        kq.setText(ketQua);
+    }
+    public void XuLiTru(View v){
+        EditText ed1 = findViewById(R.id.edtSo1);
+        EditText ed2 = findViewById(R.id.edtSo2);
+
+        // Lấy dữ liệu từ 2  điều khiển đó
+        String so1 = ed1.getText().toString();
+        String so2 = ed2.getText().toString();
+
+        // Chuyển dữ liệu từ chuỗi sang số
+        double soA = Double.parseDouble(so1);
+        double soB = Double.parseDouble(so2);
+
+        // Tính toán
+        double tong = soA - soB;
+
+        // Hiện kết quả
+        EditText kq = findViewById(R.id.edtSo3);
+
+        // Chuyển kết quả tính được thành chuỗi
+        String ketQua = String.valueOf(tong);
+
+        // Gắn kết quả lên điều khiển
+        kq.setText(ketQua);
+    }
+    public void XuLiNhan(View v){
+        EditText ed1 = findViewById(R.id.edtSo1);
+        EditText ed2 = findViewById(R.id.edtSo2);
+
+        // Lấy dữ liệu từ 2  điều khiển đó
+        String so1 = ed1.getText().toString();
+        String so2 = ed2.getText().toString();
+
+        // Chuyển dữ liệu từ chuỗi sang số
+        double soA = Double.parseDouble(so1);
+        double soB = Double.parseDouble(so2);
+
+        // Tính toán
+        double tong = soA * soB;
+
+        // Hiện kết quả
+        EditText kq = findViewById(R.id.edtSo3);
+
+        // Chuyển kết quả tính được thành chuỗi
+        String ketQua = String.format("%.2f", tong);
+        // Gắn kết quả lên điều khiển
+        kq.setText(ketQua);
+    }
+    public void XuLiChia(View v){
+        EditText ed1 = findViewById(R.id.edtSo1);
+        EditText ed2 = findViewById(R.id.edtSo2);
+
+        // Lấy dữ liệu từ 2  điều khiển đó
+        String so1 = ed1.getText().toString();
+        String so2 = ed2.getText().toString();
+
+        // Chuyển dữ liệu từ chuỗi sang số
+        double soA = Double.parseDouble(so1);
+        double soB = Double.parseDouble(so2);
+
+        // Tính toán
+        double tong = soA / soB;
+
+        // Hiện kết quả
+        EditText kq = findViewById(R.id.edtSo3);
+
+        // Chuyển kết quả tính được thành chuỗi
+        String ketQua = String.format("%.2f", tong);
+
+        // Gắn kết quả lên điều khiển
+        kq.setText(ketQua);
+    }
+
 }
