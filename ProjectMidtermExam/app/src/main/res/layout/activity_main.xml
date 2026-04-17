@@ -7,13 +7,43 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+    <Button
+        android:id="@+id/chucNang1"
+        android:layout_width="124dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="244dp"
+        android:text="Chức năng 1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/chucNang2"
+        android:layout_width="120dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="248dp"
+        android:layout_marginEnd="68dp"
+        android:text="Chức năng 2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/chucNang3"
+        android:layout_width="118dp"
+        android:layout_height="116dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="200dp"
+        android:text="Chức năng 3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/aboutMe"
+        android:layout_width="114dp"
+        android:layout_height="119dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="200dp"
+        android:text="About me"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
