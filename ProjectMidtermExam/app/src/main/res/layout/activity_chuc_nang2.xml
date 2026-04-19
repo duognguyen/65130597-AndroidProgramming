@@ -7,11 +7,11 @@
     android:layout_height="match_parent"
     tools:context=".ChucNang2">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="chuc nang2 "
-        tools:layout_editor_absoluteX="177dp"
-        tools:layout_editor_absoluteY="297dp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleViewNhac"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

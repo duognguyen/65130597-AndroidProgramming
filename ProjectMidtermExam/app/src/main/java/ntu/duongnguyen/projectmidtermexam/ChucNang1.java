@@ -1,6 +1,7 @@
 package ntu.duongnguyen.projectmidtermexam;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -15,11 +16,11 @@ public class ChucNang1 extends AppCompatActivity {
     Button checkResult;
     EditText getMonth, getYear;
     TextView setKq;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chuc_nang1);
+        checkResult = findViewById(R.id.button);
         checkResult.setOnClickListener(v -> check());
     }
     public void check(){
