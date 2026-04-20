@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KiemTraGK">
         <activity
+            android:name=".ChucNang4GK"
+            android:exported="false" />
+        <activity
+            android:name=".ChucNang3GK"
+            android:exported="false" />
+        <activity
+            android:name=".ChucNang2GK"
+            android:exported="false" />
+        <activity
+            android:name=".ChucNang1GK"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
