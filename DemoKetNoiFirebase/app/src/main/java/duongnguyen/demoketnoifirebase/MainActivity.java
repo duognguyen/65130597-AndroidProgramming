@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         FirebaseDatabase database = FirebaseDatabase.getInstance("https://demoketnoifirebase-default-rtdb.asia-southeast1.firebasedatabase.app/");
         DatabaseReference myRef = database.getReference("tin_nhan_dau_tien");
 
-        myRef.setValue("Chào Dương, Firebase đã hoạt động rồi!");
+        myRef.setValue("Hello duongnguyen, frebase hoạt động");
         // Read from the database
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
