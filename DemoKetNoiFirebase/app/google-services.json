@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "396066693800",
+    "project_id": "demoketnoifirebase",
+    "storage_bucket": "demoketnoifirebase.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396066693800:android:cfe8b63a131f1e46d0989d",
+        "android_client_info": {
+          "package_name": "duongnguyen.demoketnoifirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxEjs-RS_1rFU5J8WBga6vc-4VrPjP0co"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
