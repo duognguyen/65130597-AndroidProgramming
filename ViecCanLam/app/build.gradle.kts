@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "duongnguyen.weddingapp"
+    namespace = "duongnguyen.vieccanlam"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -12,7 +12,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "duongnguyen.weddingapp"
+        applicationId = "duongnguyen.vieccanlam"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -42,8 +42,6 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     implementation(libs.firebase.database)
-    implementation(libs.recyclerview)
-    implementation(libs.cardview)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

@@ -1,4 +1,4 @@
-package duongnguyen.weddingapp;
+package duongnguyen.vieccanlam;
 
 import android.os.Bundle;
 
