@@ -53,7 +53,7 @@ public class Tasks implements Serializable {
     public HashMap<String , String> toFirebaseObject(){
         HashMap<String , String> taskObject = new HashMap<String, String>();
         taskObject.put("name", name);
-        taskObject.put("date", name);
+        taskObject.put("date", date);
         taskObject.put("message", message);
         taskObject.put("priority", priority);
         return taskObject;
